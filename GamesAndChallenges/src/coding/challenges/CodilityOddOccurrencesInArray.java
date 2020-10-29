@@ -10,7 +10,7 @@ import java.util.Arrays;
  *         of elements
  *
  */
-public class OddOccurrencesInArray {
+public class CodilityOddOccurrencesInArray {
 
 	/**
 	 * @param args

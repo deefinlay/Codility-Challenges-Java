@@ -20,7 +20,6 @@ public class CodilityCyclicRotation {
 		System.out.println("Unshifted: " + Arrays.toString(unshifted));
 		int[] shifted = shiftArray(unshifted, numShifts);
 		System.out.println("Shifted: " + Arrays.toString(shifted));
-
 	}
 
 	/**
@@ -37,6 +36,10 @@ public class CodilityCyclicRotation {
 		for (int shifts = 1; shifts <= K; shifts++) {
 			// set aside the last element temporarily while shifting the array
 			int setAside = A[dimension - 1];
+    		// for empty array
+			if (A.length == 0) {
+    		    return A;
+    		}
 			for (int counter = 1; counter < dimension; counter++) {
 				// shift the element
 				A[dimension - counter] = A[dimension - counter - 1];
